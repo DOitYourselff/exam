@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <meta charset = "UTF-8">
+  <meta name = "viewport" content = "width=device-width, initial-scale=1">
+  <title>Title</title>
+  <link rel = "stylesheet" href = "./css/main.css">
+  <script src = "./js/main.js"></script>
+    <script src = "js/shopBag.js"></script>
+  <script src = "js/category.js"></script>
+</head>
+<body>
+
+<div id = "header">
+  <nav class = "navbar navbar-expand-sm color1 justify-content-between sticky-top mobile">
+    <!-- Logo -->
+    <a class = "navbar-brand " href = "index.html">MagazZzin4ik</a>
+    <!-- Cart -->
+    <button class = "btn p-1 color3" data-toggle = "modal" data-target = "#myCart"><img class = "cart"
+                                                                                        src = "content/img/bag.png"></button>
+  </nav>
+  <br>
+</div>
+
+<div id = "content" class = "container-fluid">
+<!-- Shopping Cart -->
+      <div class = "modal fade" id = "myCart">
+        <div class = "modal-dialog modal-dialog-centered">
+          <div class = "modal-content">
+
+            <!-- Cart Header -->
+            <div class = "modal-header color1">
+              <h4 class = "modal-title text-white">Shopping Bag</h4>
+              <button type = "button" class = "close text-white" data-dismiss = "modal">&times;</button>
+            </div>
+
+            <!-- Cart body -->
+            <div class = "modal-body" id="bagBody">
+              Bag is empty
+            </div>
+
+            <!-- Cart footer -->
+            <div class = "modal-footer color1">
+              <button id="btnOrder" onclick="makeOrder()" class = "btn btn-secondary color3">Make order</button>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- End Shopping cart -->
+
+  <div id = "menu" class = "mobile color5">
+        <h3 class = "mobile col-md-12 text-white mobile">Каталог товарів</h3>
+    <div id = "categories" class = "col-md-12 text-white mobile">
+        <a class = "mobile" onclick="loadGoodsCatg(1)"  data-category-id = "1">Усі товари</a>
+      </div>
+  </div>
+  <div id = "main" class = "row product-grid card-columns">
+
+  </div>
+
+
+</div>
+
+<div id = "footer" class = "navbar fixed-bottom">
+  <div class = "container-fluid justify-content-between text-muted">
+    <span>Designed by NNN - Ltd.</span>
+    <nav>
+      <a href = "https://www.youtube.com/"><img class = "social_icon" src = "content/img/social/youtube.png"></a>
+      <a href = "https://www.twitter.com/"><img class = "social_icon" src = "content/img/social/twitter.png"></a>
+      <a href = "https://www.linkedin.com/"><img class = "social_icon" src = "content/img/social/linkedin.png"></a>
+      <a href = "https://www.instagram.com/"><img class = "social_icon" src = "content/img/social/insta.png"></a>
+      <a href = "https://www.facebook.com/"><img class = "social_icon" src = "content/img/social/facebook.png"></a>
+    </nav>
+  </div>
+</div>
+
+</body>
+</html>
